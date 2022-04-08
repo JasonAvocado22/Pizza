@@ -8,8 +8,95 @@
 <body>
 <div class="container">
     <div class="content">
-        <h1> Jason's Pizzeria</h1>
+        <h1> BEns's pizzaria</h1>
+
     </div>
-</div>
+    <form>
+        <fieldset>
+            <legend>Customer:</legend>
+            <div class="row">
+                <div>
+                    <label for="firstname">First</label>
+                    <input id="firstname" name="first_name" type="text">
+                </div>
+                <div>
+                    <label for="lastname">Last</label>
+                    <input id="lastname" name="last_name" type="text">
+                </div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>deals:</legend>
+            <div class="row">
+                <input type="radio" id="vanilla" name="icecream">
+                <label for="vanilla">jason pizza</label>
+            </div>
+            <div>
+                <input type="radio" id="strawberry" name="icecream">
+                <label for="strawberry">extra large pepperoni</label>
+            </div>
+            <div>
+                <input type="radio" id="chocolate" name="icecream">
+                <label for="chocolate">small cheese</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Sizes:</legend>
+            <div class="row">
+                <div>
+                    <input type="radio" id="small" name="size">
+                    <label for="small">Small</label>
+                </div>
+                <div>
+                    <input type="radio" id="medium" name="size">
+                    <label for="medium">Medium</label>
+                </div>
+                <div>
+                    <input type="radio" id="large" name="size">
+                    <label for="large">Large</label>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Toppings </legend>
+            <div>
+                <div>
+                    <input type="checkbox" id="sprinkles" name="sprinkles">
+                    <label for="sprinkles">cheese</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="whippedCream" name="whippedCream">
+                    <label for="whippedCream">cheesee</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="caramel" name="caramel">
+                    <label for="caramel">extra cheese</label>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Special Styles</legend>
+            <div>
+                <label for="container">Please Choose One</label>
+                <select name="container" id="container">
+                    <option value="cup">keyboard style</option>
+                    <option value="sugar">computer style</option>
+                    <option value="waffle">jason style</option>
+                    <option value="dippedWaffle">ojay ben style</option>
+                </select>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Special</legend>
+            <div>
+                <label for="Specialrequests"> Special Requests:</label>
+                <textarea id="Specialrequests" name="SpecialRequests" rows="4" cols="10" placeholder="shut ur ......">
+    </textarea>
+            </div>
+        </fieldset>
+        <button type="button" onclick="alert('free today for our Grand Opening!')">Calculate Cost</button>
+        <button type="submit">Submit Order</button>
+    </form>
+</div>"
 </body>
 </html>
